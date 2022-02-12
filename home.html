@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>home page</title>
+</head>
+
+<body id="body">
+    <header class="header">
+        <div class="container-fluid">
+            <div class="container-header justify-content-between d-flex align-items-center">
+                <a href="" class="header-link">
+                    <img src="./images/home-logo.svg" alt="" class="header-logo-img">
+                </a>
+
+                <form class="forma d-flex align-items-center" action="">
+                    <label class="d-flex">
+                        <i class="bi bi-search fs-4 mt-2 position-absolute"></i>
+                        <input class="search-input" placeholder="Search books" type="text">
+                    </label>
+
+                    <button type="button" class="btn btn-primary px-5 logout-button">
+                        logout
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-1 sticky-top" style="z-index: 100;">
+            <div class="container-fluid">
+                <div class="container-section">
+                    <div class="wrapper">
+                        <span class="result-span fs-5 fw-bold">
+                            Showing 18 Result(s)
+                        </span>
+
+                        <button class="btn btn-secondary px-3 bi bi-calendar-week order-btn">
+                            Order by newest
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-3 p-5 bookmark">
+                        <h2 class="bookmark-heading">Bookmarks</h2>
+
+                        <p class="bookmark-paragraph">If you don’t like to read, you haven’t found the right book</p>
+
+                        <ul class="bookmark-list list-unstyled d-flex flex-column gap-3 m-0 p-0">
+
+                        </ul>
+                    </div>
+
+                    <div class="col-9 bg-light">
+                        <ul class="pt-5 ps-5 book-list d-flex flex-wrap gap-3 justify-content-between">
+
+                        </ul>
+
+                        <div class="d-flex justify-content-center align-items-center gap-2">
+
+                            <button class="btn btn-secondary bi bi-chevron-double-left btn-1">
+                            </button>
+
+                            <ul class="pagination-list list-unstyled p-0 pt-4 d-flex gap-2">
+                            </ul>
+
+                            <button class="btn btn-secondary bi bi-chevron-double-right btn-2">
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <div class="modal-information more-info-modal-2">
+
+        </div>
+
+        <!-- errorlarni chiqariw uchun modal -->
+
+        <div id="error" class="card error-modal-2 text-dark bg-light mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Xato ketdi!</h5>
+                <p class="card-text">Kechirasiz bizda bunday kitob topilmadi</p>
+                <video width="100%" height="300" src="./images/smh-facepalm.mp4" autoplay loop muted></video>
+                <button id="okBtn" class="btn btn-primary d-flex justify-content-center mx-auto">
+                    ok
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
